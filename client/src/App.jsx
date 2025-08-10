@@ -20,6 +20,7 @@ import BlogsList from './pages/student/BlogList';
 import AddBlog from './pages/educator/AddBlog';
 import BlogDetail from './pages/student/BlogDetail';
 import MyBlogs from './pages/educator/MyBlogs';
+import Service from './components/student/Services';
 
 import { ToastContainer } from 'react-toastify';
 import 'quill/dist/quill.snow.css';
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Service />} />
         <Route path="/formation" element={<BlogsList />} />
         <Route path="/formation/:id" element={<BlogDetail />} />
         <Route path="/course/:id" element={<CourseDetails />} />
