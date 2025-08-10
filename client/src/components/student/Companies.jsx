@@ -1,6 +1,8 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
 import { FaUserGraduate, FaAward, FaHandsHelping, FaLightbulb, FaChartLine, FaGlobe } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // import Link
+
 
 
 const Companies = () => {
@@ -82,53 +84,62 @@ const Companies = () => {
        </div>
      </div>
      {/* Nos Services d’Accompagnement */}
-     <div className="max-w-6xl mx-auto px-6 py-12 text-center">
-       <h2 className="text-xl font-bold mb-2">Nos Services d’Accompagnement</h2>
-       <p className="text-gray-600 mb-8 text-sm md:text-base">
-         Découvrez les solutions personnalisées que nous proposons aux futurs entrepreneurs et professionnels en reconversion
-       </p>
-     
-       <div className="flex flex-col md:flex-row justify-center gap-8">
-         {/* Service 1 */}
-         <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
-           <img
-             src={assets.compace}
-             alt="Accompagnement à la création d’entreprise"
-             className="rounded-lg w-full h-40 object-cover mb-4"
-           />
-           <h3 className="text-center font-semibold">Création d’Entreprise</h3>
-           <p className="text-gray-600 text-xs md:text-sm">
-             De l’idée à l’immatriculation, nous vous guidons dans toutes les démarches administratives, juridiques et financières.
-           </p>
-         </div>
-     
-         {/* Service 2 */}
-         <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
-           <img
-             src={assets.coashing}
-             alt="Coaching professionnel"
-             className="rounded-lg w-full h-40 object-cover mb-4"
-           />
-           <h3 className="text-center font-semibold">Coaching & Mentorat</h3>
-           <p className="text-gray-600 text-xs md:text-sm">
-             Nos coachs certifiés vous accompagnent dans votre développement personnel et la structuration de votre projet professionnel.
-           </p>
-         </div>
-     
-         {/* Service 3 */}
-         <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
-           <img
-             src={assets.noformation}
-             alt="Formations professionnelles"
-             className="rounded-lg w-full h-40 object-cover mb-4"
-           />
-           <h3 className="text-center font-semibold">Formations Professionnelles</h3>
-           <p className="text-gray-600 text-xs md:text-sm">
-             Des modules adaptés aux besoins du marché : bureautique, marketing digital, gestion de projet, comptabilité, etc.
-           </p>
-         </div>
-       </div>
-     </div>
+      <div className="max-w-6xl mx-auto px-6 py-12 text-center">
+        <h2 className="text-xl font-bold mb-2">Nos Services d’Accompagnement</h2>
+        <p className="text-gray-600 mb-8 text-sm md:text-base">
+          Découvrez les solutions personnalisées que nous proposons aux futurs entrepreneurs et professionnels en reconversion
+        </p>
+
+        <div className="flex flex-col md:flex-row justify-center gap-8">
+          {/* Service 1 */}
+          <Link
+            to="/services#creation-entreprise"
+            className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+          >
+            <img
+              src={assets.compace}
+              alt="Accompagnement à la création d’entreprise"
+              className="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <h3 className="text-center font-semibold">Création d’Entreprise</h3>
+            <p className="text-gray-600 text-xs md:text-sm">
+              De l’idée à l’immatriculation, nous vous guidons dans toutes les démarches administratives, juridiques et financières.
+            </p>
+          </Link>
+
+          {/* Service 2 */}
+          <Link
+            to="/services#coaching-mentorat"
+            className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+          >
+            <img
+              src={assets.coashing}
+              alt="Coaching professionnel"
+              className="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <h3 className="text-center font-semibold">Coaching & Mentorat</h3>
+            <p className="text-gray-600 text-xs md:text-sm">
+              Nos coachs certifiés vous accompagnent dans votre développement personnel et la structuration de votre projet professionnel.
+            </p>
+          </Link>
+
+          {/* Service 3 */}
+          <Link
+            to="/services#formations-professionnelles"
+            className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+          >
+            <img
+              src={assets.noformation}
+              alt="Formations professionnelles"
+              className="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <h3 className="text-center font-semibold">Formations Professionnelles</h3>
+            <p className="text-gray-600 text-xs md:text-sm">
+              Des modules adaptés aux besoins du marché : bureautique, marketing digital, gestion de projet, comptabilité, etc.
+            </p>
+          </Link>
+        </div>
+      </div>
      
     </div>
   );

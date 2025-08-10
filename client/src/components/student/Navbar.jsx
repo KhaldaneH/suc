@@ -66,6 +66,7 @@ const Navbar = () => {
         <div className="hidden md:flex flex-1 justify-center space-x-12 text-base md:text-lg font-semibold text-gray-700 tracking-wide">
           <Link to="/" className="hover:text-blue-600 transition">Accueil</Link>
           <Link to="/about" className="hover:text-blue-600 transition">À propos</Link>
+          <Link to="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link to="/formation" className="hover:text-blue-600 transition">Formations</Link>
           <Link to="/course-list" className="hover:text-blue-600 transition">Articles</Link>
           <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
@@ -213,6 +214,7 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-4 text-base font-semibold text-gray-700 tracking-wide">
             <Link to="/" onClick={closeSidebar} className="hover:text-blue-600 transition">Accueil</Link>
             <Link to="/about" onClick={closeSidebar} className="hover:text-blue-600 transition">À propos</Link>
+            <Link to="/services" className="hover:text-blue-600 transition">Services</Link>
             <Link to="/formation" className="hover:text-blue-600 transition">Formations</Link>
             <Link to="/course-list" onClick={closeSidebar} className="hover:text-blue-600 transition">Articles</Link>
             <Link to="/contact" onClick={closeSidebar} className="hover:text-blue-600 transition">Contact</Link>

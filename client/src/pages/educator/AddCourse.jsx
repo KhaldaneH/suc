@@ -75,7 +75,7 @@ const AddCourse = () => {
   };
 
   const addLecture = () => {
-    if (!lectureDetails.lectureTitle.trim() || !lectureDetails.lectureDuration) {
+    if (!lectureDetails.lectureTitle.trim()) {
       toast.error('Lecture title and duration are required');
       return;
     }

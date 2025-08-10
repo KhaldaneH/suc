@@ -10,7 +10,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:items-start items-center w-full">
          <div className="text-2xl font-extrabold text-blue-400 tracking-wide select-none cursor-default">
-  SUC <span className="text-white">Consulting</span>
+  SUC <span className="text-white">Consulting Innovation</span>
 </div>
 
 
@@ -23,7 +23,8 @@ const Footer = () => {
           <h2 className="font-semibold text-white mb-5">Company</h2>
           <ul className="flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2">
             <li><a href="/">Home</a></li>
-            <li><a href="/course-list">Courses</a></li>
+            <li><a href="/formation">Formations</a></li>
+            <li><a href="/course-list">Articles</a></li>
             <li><a href="/about">About us</a></li>
             <li><a href="/contact">Contact us</a></li>
           </ul>

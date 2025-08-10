@@ -67,10 +67,11 @@ const BlogDetail = () => {
     <div className="w-full max-w-screen-xl mx-auto px-6 py-6">
       {blog.imageUrl && (
         <img
-          src={blog.imageUrl}
-          alt={blog.title}
-          className="w-full h-64 object-cover rounded mb-6"
-        />
+  src={blog.imageUrl}
+  alt={blog.title}
+  className="w-full h-[110px] sm:h-64 object-cover rounded mb-6"
+/>
+
       )}
 
       <h1 className="text-3xl font-bold mb-1">{blog.title}</h1>

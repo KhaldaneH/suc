@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 text-center lg:text-left relative z-10">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight relative">
             Prenez en main votre avenir avec les formations de{' '}
-            <span className="text-blue-400">SUC Consulting.</span>
+            <span className="text-blue-400">SUC Consulting Innovation.</span>
             <img
               src={assets.sketch}
               alt="sketch"

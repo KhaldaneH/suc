@@ -94,7 +94,7 @@ const MyCourses = () => {
   if (!courses) return <Loading />;
 
   return (
-    <div className="h-screen flex flex-col items-start justify-between md:p-8 md:pb-0 p-4 pt-8 pb-0">
+    <div className="min-h-screen flex flex-col items-start justify-between md:p-8 md:pb-0 p-4 pt-8 pb-0">
       <div className="w-full">
         <h2 className="pb-4 text-lg font-medium">Articles</h2>
         <div className="flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border border-gray-500/20">
@@ -235,6 +235,7 @@ const MyCourses = () => {
           </div>
         </div>
       )}
+      <br />
     </div>
   );
 };

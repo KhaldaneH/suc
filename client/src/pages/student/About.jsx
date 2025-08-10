@@ -1,8 +1,9 @@
 import React from 'react';
 import Footer from '../../components/student/Footer';
 import { assets } from '../../assets/assets';
-import CreateCompany from '../../components/student/Companysup';
 import { FaUserGraduate, FaAward, FaHandsHelping, FaLightbulb, FaChartLine, FaGlobe } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
     <div className="w-full lg:w-1/2">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
         Libérez votre potentiel avec{' '}
-        <span className="text-blue-400">SUC Consulting.</span>
+        <span className="text-blue-400">SUC Consulting Innovation.</span>
       </h1>
 
       <p className="text-gray-300 mb-6 text-base md:text-lg">
@@ -158,7 +159,10 @@ const About = () => {
 
   <div className="flex flex-col md:flex-row justify-center gap-8">
     {/* Service 1 */}
-    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
+    <Link
+      to="/services#creation-entreprise"
+      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+    >
       <img
         src={assets.compace}
         alt="Accompagnement à la création d’entreprise"
@@ -168,10 +172,13 @@ const About = () => {
       <p className="text-gray-600 text-xs md:text-sm">
         De l’idée à l’immatriculation, nous vous guidons dans toutes les démarches administratives, juridiques et financières.
       </p>
-    </div>
+    </Link>
 
     {/* Service 2 */}
-    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
+    <Link
+      to="/services#coaching-mentorat"
+      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+    >
       <img
         src={assets.coashing}
         alt="Coaching professionnel"
@@ -181,10 +188,13 @@ const About = () => {
       <p className="text-gray-600 text-xs md:text-sm">
         Nos coachs certifiés vous accompagnent dans votre développement personnel et la structuration de votre projet professionnel.
       </p>
-    </div>
+    </Link>
 
     {/* Service 3 */}
-    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left">
+    <Link
+      to="/services#formations-professionnelles"
+      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm w-full md:w-1/3 text-left hover:shadow-lg transition"
+    >
       <img
         src={assets.noformation}
         alt="Formations professionnelles"
@@ -194,10 +204,9 @@ const About = () => {
       <p className="text-gray-600 text-xs md:text-sm">
         Des modules adaptés aux besoins du marché : bureautique, marketing digital, gestion de projet, comptabilité, etc.
       </p>
-    </div>
+    </Link>
   </div>
 </div>
-      <CreateCompany/>
       <Footer/>
     </div>
   );

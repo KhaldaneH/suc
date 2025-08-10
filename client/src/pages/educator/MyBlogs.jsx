@@ -47,7 +47,6 @@ const MyBlogs = () => {
           autoClose: 3000,
           theme: 'colored',
         });
-        // Remove deleted blog from list immediately
         setBlogs((prev) => prev.filter((b) => b._id !== blogId));
         if (selectedBlog?._id === blogId) setSelectedBlog(null);
       } else {
@@ -102,7 +101,7 @@ const MyBlogs = () => {
   if (!blogs) return <Loading />;
 
   return (
-    <div className="h-screen flex flex-col items-start justify-between md:p-8 md:pb-0 p-4 pt-8 pb-0">
+    <div className="min-h-screen flex flex-col items-start justify-between md:p-8 md:pb-0 p-4 pt-8 pb-0">
       <div className="w-full">
         <h2 className="pb-4 text-lg font-medium">Formations</h2>
         <div className="flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border border-gray-500/20">
